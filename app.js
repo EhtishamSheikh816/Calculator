@@ -1,7 +1,6 @@
 function num(e) {
   let getInp = document.getElementById("inp");
   getInp.value += e;
-  console.log(getInp);
 }
 
 function eql() {
@@ -23,6 +22,18 @@ function ac() {
   getInp.value = "";
 }
 
-function onOff() {
+function opt(operator) {
   let getInp = document.getElementById("inp");
+  let lastOpt = getInp.value.slice(-1);
+  if (
+    lastOpt == "+" ||
+    lastOpt == "-" ||
+    lastOpt == "*" ||
+    lastOpt == "/" ||
+    lastOpt == "%"
+  ) {
+    getInp.value = getInp.value.slice(0, -1) + operator;
+  } else {
+    getInp.value += operator;
+  }
 }

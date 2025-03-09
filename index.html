@@ -9,31 +9,31 @@
   <body>
     <div>
       <div class="main">
-        <input readonly type="text" id="inp" />
+        <input readonly type="text" onclick="onOff()" id="inp" />
         <div class="btn">
           <div>
             <button onclick="ac()">AC</button>
             <button onclick="del()">DEL</button>
-            <button onclick="num('%')">%</button>
-            <button onclick="num('/')">/</button>
+            <button onclick="opt('%')">%</button>
+            <button onclick="opt('/')">/</button>
           </div>
           <div>
             <button onclick="num('7')">7</button>
             <button onclick="num('8')">8</button>
             <button onclick="num('9')">9</button>
-            <button onclick="num('*')">X</button>
+            <button onclick="opt('*')">X</button>
           </div>
           <div>
             <button onclick="num('4')">4</button>
             <button onclick="num('5')">5</button>
             <button onclick="num('6')">6</button>
-            <button onclick="num('-')">-</button>
+            <button onclick="opt('-')">-</button>
           </div>
           <div>
             <button onclick="num('1')">1</button>
             <button onclick="num('2')">2</button>
             <button onclick="num('3')">3</button>
-            <button onclick="num('+')">+</button>
+            <button onclick="opt('+')">+</button>
           </div>
           <div>
             <button onclick="num('00')">00</button>
